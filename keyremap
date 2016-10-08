@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $1 == "l" ]
+then
+  xkbcomp -I$HOME/.xkb ~/.xkb/keymap/laptop-kb $DISPLAY
+elif [ $1 == "k" ]
+then
+  xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mac-kb $DISPLAY
+elif [ $1 == "mk" ]
+then
+  xkbcomp -I$HOME/.xkb ~/.xkb/keymap/laptop-kb-mk $DISPLAY
+else
+  setxkbmap us
+fi

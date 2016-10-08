@@ -1,0 +1,15 @@
+partial modifier_keys
+xkb_symbols "mac_keyboard_swap" {
+    replace key <LCTL>  { [ Super_L ] };
+    replace key <LWIN>  { [ Control_L ] };
+};
+
+xkb_symbols "win_keyboard_swap" {
+    replace key <LALT>  { [ Control_L ] };
+    replace key <LWIN>  { [ Meta_L ] };
+    replace key <LCTL>  { [ Super_L ] };
+    replace key <KP1>	{ [ End, End ] };
+    replace key <KP7>	{ [ Home, Home ] };
+	replace key <KP9>	{ [ Prior, Prior ] };
+    replace key <KP3>	{ [ Next, Next ] };
+};
